@@ -1,12 +1,19 @@
 # Visual Studio Code Extension Qt for Python
 
-Keeping addon going as the offical one didn't work for me
+Keeping addon going as the offical one didn't work for me.  Added remix to name
 
 A Visual Studio Code extension for PySide6, PySide2, PyQt6 and PyQt5.
 
 ## Highlight Features
 
 All features support multi-root workspace project.
+
+### Generate Code
+- Added right click to auto generate a basic folder structure
+- In folder structure add manager to control more then 1 QT interface
+- Create basic .UI file for design
+- Create basic .py file for code
+
 
 ### QML
 

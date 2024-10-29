@@ -11,6 +11,7 @@ import type { ExecError, StdErrError } from './run'
 import type { ErrorResult, SuccessResult } from './types'
 import { registerUicLiveExecution$ } from './uic/uic-live-execution'
 import { toDisposable } from './utils'
+import { createStructure } from './structure-generate'
 
 const JSON_INDENT = 2
 
@@ -71,6 +72,8 @@ export async function activate({
     .map(toDisposable)
 
   subscriptions.push(...disposables)
+
+  createStructure()
 }
 
 function onResultReceived(result: Result, outputChannel: OutputChannel) {

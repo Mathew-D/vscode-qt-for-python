@@ -1,8 +1,8 @@
 {
-  "name": "vscode-qt-for-python2",
-  "displayName": "Qt for Python2",
+  "name": "vscode-qt-for-python-remix",
+  "displayName": "Qt for Python reMix",
   "description": "Visual Studio Code extension for PySide6 and PyQt6.",
-  "version": "7.6.1",
+  "version": "7.7.0",
   "publisher": "seanwu",
   "license": "MIT",
   "engines": {
@@ -24,6 +24,7 @@
   "dependencies": {
     "fast-xml-parser": "^4.5.0",
     "rxjs": "^7.8.1",
+    "vsce": "^2.15.0",
     "vscode-languageclient": "^9.0.1",
     "vscode-uri": "^3.0.8",
     "zod": "^3.23.8"
@@ -143,6 +144,10 @@
         "command": "qtForPython.compileTranslations",
         "title": "Compile Qt Translation File (lrelease)",
         "category": "Qt for Python"
+      },
+      {
+        "command": "extension.generateCodeStructure",
+        "title": "Generate Python QT Structure"
       }
     ],
     "menus": {
@@ -228,6 +233,11 @@
           "command": "qtForPython.compileTranslations",
           "when": "resourceExtname == .ts && resourceLangId == xml",
           "group": "qtForPython"
+        },
+        {
+          "command": "extension.generateCodeStructure",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation"
         }
       ],
       "editor/title": [
