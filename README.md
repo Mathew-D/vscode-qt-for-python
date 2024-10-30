@@ -10,6 +10,7 @@ All features support multi-root workspace project.
 
 ### Generate Code
 - Added right click to auto generate a basic folder structure
+- gui,images,interface
 - In folder structure add manager to control more then 1 QT interface
 - Create basic .UI file for design
 - Create basic .py file for code
