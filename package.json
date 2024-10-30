@@ -2,7 +2,7 @@
   "name": "vscode-qt-for-python-remix",
   "displayName": "Qt for Python reMix",
   "description": "Visual Studio Code extension for PySide6 and PyQt6.",
-  "version": "7.7.0",
+  "version": "1.0.0",
   "publisher": "seanwu",
   "license": "MIT",
   "engines": {
